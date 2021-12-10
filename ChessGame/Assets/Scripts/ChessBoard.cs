@@ -621,9 +621,9 @@ public class ChessBoard : MonoBehaviour
 
         if(CheckForCheckMate())
             CheckMate(cp.team);
-
-        if(CheckForStaleMate())
+        else if(CheckForStaleMate())
             CheckMate(2);
+            
         return true;
     }
     private Vector2Int LookupTileIndex(GameObject hitInfo)
