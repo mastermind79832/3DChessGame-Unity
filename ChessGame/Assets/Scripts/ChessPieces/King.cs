@@ -98,7 +98,7 @@ public class King : ChessPiece
                             }
                 }
                 //right Rook
-                if(leftRook == null)
+                if(rightRook == null)
                 {
                     if(board[7,0].type == ChessPieceType.Rook)      // if chess piece is rook
                         if(board[7,0].team == 0)                    // if Rook piece is in white Team
@@ -123,7 +123,7 @@ public class King : ChessPiece
                             }
                 }
                 //right Rook
-                if(leftRook == null)
+                if(rightRook == null)
                 {
                     if(board[7,7].type == ChessPieceType.Rook)      // if chess piece is rook
                         if(board[7,7].team == 1)                    // if Rook piece is in BLACK Team
